@@ -32,9 +32,16 @@ proguard/
 # Android Studio captures folder
 captures/
 
+# Android Studio external native build
+.externalNativeBuild
+
 # Intellij
 *.iml
 .idea/workspace.xml
+.idea/libraries
 
 # Keystore files
 *.jks
+
+# Mac Desktop Services
+.DS_Store
