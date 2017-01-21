@@ -52,5 +52,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i(activityClassName, "onDestroy event fired");
+        Log.e(activityClassName, "We’re going down, Captain!");
     }
 }
