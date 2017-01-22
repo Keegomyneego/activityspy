@@ -1,0 +1,33 @@
+01/21 19:35:37: Launching app
+$ adb push /Users/keegomyneego/Documents/Repos/ActivitySpy/app/build/outputs/apk/app-debug.apk /data/local/tmp/edu.washington.ksf7.activityspy
+$ adb shell pm install -r "/data/local/tmp/edu.washington.ksf7.activityspy"
+	pkg: /data/local/tmp/edu.washington.ksf7.activityspy
+Success
+
+
+$ adb shell am start -n "edu.washington.ksf7.activityspy/edu.washington.ksf7.activityspy.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Connected to process 8529 on device oneplus-one_a2005-9ba5fadc
+W/System: ClassLoader referenced unknown path: /data/app/edu.washington.ksf7.activityspy-1/lib/arm64
+I/InstantRun: Instant Run Runtime started. Android package is edu.washington.ksf7.activityspy, real application class is null.
+W/System: ClassLoader referenced unknown path: /data/app/edu.washington.ksf7.activityspy-1/lib/arm64
+W/art: Before Android 4.1, method android.graphics.PorterDuffColorFilter android.support.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+I/MainActivity: onCreate event fired
+I/MainActivity: onStart event fired
+I/MainActivity: onResume event fired
+E/AbstractTracker: Can't create handler inside thread that has not called Looper.prepare()
+D/AppTracker: App Event: start
+D/OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+I/Adreno: QUALCOMM build                   : 183c040, Iff84fb1103
+          Build Date                       : 03/18/16
+          OpenGL ES Shader Compiler Version: XE031.06.00.02
+          Local Branch                     :
+          Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.BF64.1.2.2_RB4.06.00.01.180.031
+          Remote Branch                    : NONE
+          Reconstruct Branch               : NOTHING
+I/OpenGLRenderer: Initialized EGL, version 1.4
+I/MainActivity: onPause event fired
+E/AbstractTracker: Can't create handler inside thread that has not called Looper.prepare()
+D/AppTracker: App Event: stop
+I/MainActivity: onStop event fired
+I/MainActivity: onDestroy event fired
+E/MainActivity: We’re going down, Captain!
